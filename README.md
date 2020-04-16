@@ -7,7 +7,7 @@ This repository contains a test app to demonstrate Adobe Experience Platform plu
 
 ## Prerequisites
 
-- [Node Package Management](https://www.npmjs.com/) (`npm`)
+- [Node Package Management](https://www.npmjs.com/)
     - Cordova is distributed via `npm`.
 - [Apache Cordova](https://cordova.apache.org/#getstarted)
 - [Android Studio](https://developer.android.com/studio/)

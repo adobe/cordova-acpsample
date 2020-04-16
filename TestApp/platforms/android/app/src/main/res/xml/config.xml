@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.adobe.marketing.mobile.cordova_acp_testapp" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <feature name="ACPCore_Cordova">
+        <param name="android-package" value="com.adobe.marketing.mobile.cordova.ACPCore_Cordova" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="ACPIdentity_Cordova">
+        <param name="android-package" value="com.adobe.marketing.mobile.cordova.ACPIdentity_Cordova" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="ACPLifecycle_Cordova">
+        <param name="android-package" value="com.adobe.marketing.mobile.cordova.ACPLifecycle_Cordova" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="ACPSignal_Cordova">
+        <param name="android-package" value="com.adobe.marketing.mobile.cordova.ACPSignal_Cordova" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="ACPAnalytics_Cordova">
+        <param name="android-package" value="com.adobe.marketing.mobile.cordova.ACPAnalytics_Cordova" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="ACPGriffon_Cordova">
+        <param name="android-package" value="com.adobe.marketing.mobile.cordova.ACPGriffon_Cordova" />
+        <param name="onload" value="true" />
+    </feature>
+    <name>HelloCordova</name>
+    <description>
+        A sample Apache Cordova application for testing cordova ACP plugins
+    </description>
+    <author email="dev@cordova.apache.org" href="http://cordova.io">
+        Apache Cordova Team
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <allow-intent href="market:*" />
+    <preference name="loglevel" value="DEBUG" />
+</widget>

@@ -1,0 +1,31 @@
+{
+    "declarations": {
+        "use_frameworks!": {
+            "declaration": "use_frameworks!",
+            "count": 4
+        }
+    },
+    "sources": {
+        "https://github.com/CocoaPods/Specs.git": {
+            "source": "https://github.com/CocoaPods/Specs.git",
+            "count": 4
+        }
+    },
+    "libraries": {
+        "ACPAnalytics": {
+            "name": "ACPAnalytics",
+            "spec": ">= 2.2.3",
+            "count": 3
+        },
+        "ACPCore": {
+            "name": "ACPCore",
+            "spec": ">= 2.5.0",
+            "count": 2
+        },
+        "ACPGriffon": {
+            "name": "ACPGriffon",
+            "spec": ">= 1.1.0",
+            "count": 2
+        }
+    }
+}

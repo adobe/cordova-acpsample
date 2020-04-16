@@ -1,0 +1,37 @@
+{
+  "name": "com.adobe.marketing.mobile.cordova_acp_testapp",
+  "displayName": "HelloCordova",
+  "version": "1.0.0",
+  "description": "A sample Apache Cordova application that responds to the deviceready event.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": "Apache Cordova Team",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@adobe/cordova-acpanalytics": "git+https://github.com/adobe/cordova-acpanalytics.git",
+    "@adobe/cordova-acpcore": "git+https://github.com/adobe/cordova-acpcore.git",
+    "@adobe/cordova-acpgriffon": "git+https://github.com/adobe/cordova-acpgriffon.git",
+    "cordova-android": "^8.1.0",
+    "cordova-ios": "^5.1.1"
+  },
+  "devDependencies": {
+    "cordova-plugin-whitelist": "^1.3.4"
+  },
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-whitelist": {},
+      "cordova-acpcore": {},
+      "cordova-acpanalytics": {},
+      "cordova-acpgriffon": {}
+    },
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  }
+}

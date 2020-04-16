@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<!--
+    Copyright 2020 Adobe
+    All Rights Reserved.
+
+    NOTICE: Adobe permits you to use, modify, and distribute this file in
+    accordance with the terms of the Adobe license agreement accompanying
+    it. If you have received this file from a source other than Adobe,
+    then your use, modification, or distribution of it requires the prior
+    written permission of Adobe.
+
+    This file has been modified from its original form. The original
+    license can be viewed in the NOTICES.txt file.
+-->
+<html>
+<head>
+    <!--
+    Customize this policy to fit your own app's needs. For more guidance, see:
+        https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+    Some notes:
+        * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+        * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+        * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+            * Enable inline JS: add 'unsafe-inline' to default-src
+    -->
+    <meta http-equiv="Content-Security-Policy"
+          content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <title>Hello World</title>
+</head>
+<body>
+    <div>
+        <h2>ACPCore</h2>
+        <table>
+            <tr>
+                <td colspan="2"><div id="lblresult">callback result:</div></td>
+            </tr>
+            <tr>
+                <td><button id="extensionVersionCore">extensionVersion</button></td>
+                <td><button id="dispatchEvent">dispatchEvent</button></td>
+            </tr>
+            <tr>
+                <td><button id="dispatchEventWithResponseCallback">dispatchW/ResponseCallback</button></td>
+                <td><button id="dispatchResponseEvent">dispatchResponseEvent</button></td>
+            </tr>
+            <tr>
+                <td><button id="downloadRules">downloadRules</button></td>
+                <td><button id="getPrivacyStatus">getPrivacyStatus</button></td>
+            </tr>
+            <tr>
+                <td><button id="getSdkIdentities">getSdkIdentities</button></td>
+                <td><button id="setAdvertisingIdentifier">setAdvertisingIdentifier</button></td>
+            </tr>
+            <tr>
+                <td><button id="setLogLevel">setLogLevel</button></td>
+                <td><button id="setPrivacyStatus">setPrivacyStatus</button></td>
+            </tr>
+            <tr>
+                <td><button id="trackAction">trackAction</button></td>
+                <td><button id="trackState">trackState</button></td>
+            </tr>
+            <tr>
+                <td clospan="2"><button id="updateConfig">updateConfig</button></td>
+            </tr>
+        </table>
+        <h2>ACPAnalytics</h2>
+        <table>
+            <tr>
+                <td><button id="btn_extensionVersionAnalytics">extensionVersion</button></td>
+                <td><button id="btn_sendQueuedHits">sendQueuedHits</button></td>
+            </tr>
+            <tr>
+                <td><button id="btn_clearQueue">clearQueue</button></td>
+                <td><button id="btn_getQueueSize">queueSize</button></td>
+            </tr>
+            <tr>
+                <td><button id="btn_getTrackingIdentifier">trackingIdentifier</button></td>
+                <td><button id="btn_getVisitorIdentifier">visitorIdentifier</button></td>
+            </tr>
+            <tr>
+                <td><input id="input_setVisitorIdentifier" placeholder="Enter Visitor ID" /></td>
+                <td><button id="btn_setVisitorIdentifier">setVisitorIdentifier</button></td>
+            </tr>
+        </table>
+        <h2>ACPIdentity</h2>
+        <table>
+            <tr>
+                <td><button id="extensionVersionIdentity">extensionVersion</button></td>
+                <td><button id="appendVisitorInfoForUrl">appendVisitorInfoForUrl</button></td>
+            </tr>
+            <tr>
+                <td><button id="getExperienceCloudId">getExperienceCloudId</button></td>
+                <td><button id="getIdentifiers">getIdentifiers</button></td>
+            </tr>
+            <tr>
+                <td><button id="getUrlVariables">getUrlVariables</button></td>
+                <td><button id="syncIdentifier">syncIdentifier</button></td>
+            </tr>
+            <tr>
+                <td><button id="syncIdentifiers">syncIdentifiers</button></td>
+                <td><button id="syncIdentifiersWithAuthState">syncIdentifiersWithAuthState</button></td>
+            </tr>
+        </table>
+        <h2>ACPLifecycle</h2>
+        <table>
+            <tr>
+                <td><button id="btn_extensionVersionLifecycle">extensionVersion</button></td>
+            </tr>
+        </table>
+        <h2>ACPSignal</h2>
+        <table>
+            <tr>
+                <td><button id="btn_extensionVersionSignal">extensionVersion</button></td>
+            </tr>
+        </table>
+        <h2>ACPGriffon</h2>
+        <table>
+            <tr>
+                <td><button id="btn_extensionVersionGriffon">extensionVersion</button></td>
+            </tr>
+            <tr>
+                <td><input id="input_startSessionUrl" placeholder="Enter Griffon Session URL" /></td>
+                <td><button id="btn_startSession">startSession</button></td>
+            </tr>
+        </table>
+    </div>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

@@ -1,4 +1,0 @@
-dependencies {
-    api 'com.adobe.marketing.mobile:griffon:1+'
-    api 'com.android.support:appcompat-v7:+'
-}

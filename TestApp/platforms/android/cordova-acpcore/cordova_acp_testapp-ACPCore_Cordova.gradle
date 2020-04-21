@@ -1,4 +1,0 @@
-dependencies {
-    // adobe
-    api 'com.adobe.marketing.mobile:sdk-core:1.+'    
-}

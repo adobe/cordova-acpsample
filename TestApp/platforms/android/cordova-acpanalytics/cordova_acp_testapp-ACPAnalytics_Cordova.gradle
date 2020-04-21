@@ -1,3 +1,0 @@
-dependencies {
-    api 'com.adobe.marketing.mobile:analytics:1.+'
-}

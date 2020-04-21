@@ -1,7 +1,9 @@
 # Adobe Experience Platform - Test App for Cordova Plugins
 
-<!-- [![CI](https://github.com/adobe/cordova-acpsample/workflows/CI/badge.svg)](https://github.com/adobe/cordova-acpsample/actions) -->
+<!-- [![CI](https://github.com/adobe/cordova-acpsample/workflows/CI/badge.svg)](https://github.com/adobe/cordova-acpsample/actions) 
 [![GitHub](https://img.shields.io/github/license/adobe/cordova-acpsample)](https://github.com/adobe/cordova-acpsample/blob/master/LICENSE)
+-->
+
 
 This repository contains a test app to demonstrate Adobe Experience Platform plugins for Cordova.
 

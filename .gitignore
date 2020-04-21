@@ -18,6 +18,9 @@ TestApp/plugins
 TestApp/platforms/**/plugins
 !TestApp/platforms/ios/CordovaLib/Classes/Private/Plugins
 !TestApp/platforms/android/project.properties
+TestApp/platforms/android/cordova-acpanalytics/
+TestApp/platforms/android/cordova-acpcore/
+TestApp/platforms/android/cordova-acpgriffon/
 
 .DS_Store
 

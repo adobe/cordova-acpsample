@@ -39,7 +39,10 @@ var app = {
 };
 
 app.initialize();
-
+// Global vars
+var retrievedLat, retrievedLong;
+// Constants
+NEVER_EXPIRE = -1;
 // ==========================================================================================
 // Adobe Cordova plugin methods
 // ==========================================================================================
@@ -87,6 +90,18 @@ function registerControls() {
     //acpgriffon
     document.getElementById("btn_extensionVersionGriffon").addEventListener("click", extensionVersionGriffon);
     document.getElementById("btn_startSession").addEventListener("click", startSession);
+
+    // acpplaces
+    document.getElementById("extensionVersionPlaces").addEventListener("click", extensionVersionPlaces);
+    document.getElementById("clear").addEventListener("click", clear);
+    document.getElementById("getCurrentPointsOfInterest").addEventListener("click", getCurrentPointsOfInterest);
+    document.getElementById("getLastKnownLocation").addEventListener("click", getLastKnownLocation);
+    document.getElementById("getNearbyPointsOfInterest").addEventListener("click", getNearbyPointsOfInterest);
+    document.getElementById("setAuthorizationStatus").addEventListener("click", setAuthorizationStatus);
+    // get current location from cordova-plugin-geolocation for use with Places
+    document.getElementById("getCurrentLocation").addEventListener("click", getLocation);
+    // manually add geofence using cordova-plugin-geofence for testing purposes
+    document.getElementById("addGeofence").addEventListener("click", addGeofence);
 }
 
 // acpcore methods
@@ -229,6 +244,34 @@ function startSession() {
     ACPGriffon.startSession(sessionUrl, handleCallback, handleError);
 }
 
+// acpplaces methods
+function extensionVersionPlaces() {
+    ACPPlaces.extensionVersion(handleCallback, handleError);
+}
+
+function clear() {
+    var sessionUrl = document.getElementById("input_startSessionUrl").value;
+    ACPPlaces.clear(handleCallback, handleError);
+}
+
+function getCurrentPointsOfInterest() {
+    ACPPlaces.getCurrentPointsOfInterest(handleCallback, handleError);
+}
+
+function getLastKnownLocation() {
+    ACPPlaces.getLastKnownLocation(handleCallback, handleError);
+}
+
+function getNearbyPointsOfInterest() {
+    var location = {latitude:retrievedLat, longitude:retrievedLong};
+    var limit = 10;
+    ACPPlaces.getNearbyPointsOfInterest(location, limit, handlePois, handleError);
+}
+
+function setAuthorizationStatus() {
+    ACPPlaces.setAuthorizationStatus(ACPPlaces.AuthorizationStatusAlways, handleCallback, handleError);
+}
+
 // ==========================================================================================
 // Helpers
 // ==========================================================================================
@@ -247,3 +290,117 @@ function updateResultLabel(text) {
     label.innerHTML = text;
     console.log(text);
 }
+
+// get the device's current coordinates using cordova-plugin-geolocation
+function getLocation() {
+        navigator.geolocation.getCurrentPosition(onGetLocationSuccess, onGetLocationError);
+}
+
+function onGetLocationSuccess(position) {
+    if(((retrievedLat || retrievedLong) === null) || ((retrievedLat !== position.coords.latitude) || retrievedLong !== position.coords.longitude))
+    {
+        alert("Latitude: "          + position.coords.latitude          + "\n" +
+              "Longitude: "         + position.coords.longitude         + "\n" +
+              "Altitude: "          + position.coords.altitude          + "\n" +
+              "Accuracy: "          + position.coords.accuracy          + "\n" +
+              "Altitude Accuracy: " + position.coords.altitudeAccuracy  + "\n" +
+              "Heading: "           + position.coords.heading           + "\n" +
+              "Speed: "             + position.coords.speed             + "\n" +
+              "Timestamp: "         + position.timestamp                + "\n");
+    }
+    retrievedLat = position.coords.latitude;
+    retrievedLong = position.coords.longitude;
+};
+
+function onGetLocationError(error) {
+        alert("code: "    + error.code    + "\n" +
+              "message: " + error.message + "\n");
+}
+
+// Geofence helpers
+// intialize geofence tracking onDeviceReady. once geofence plugin is intialized, 
+// we can add listeners for geofence transition and geofence notification clicked.
+document.addEventListener("deviceready", function () {
+    // window.geofence is now available
+    window.geofence.initialize().then(function () {
+        console.log("Geofence Plugin: Successful initialization");
+        // listen for geofence transition then process each using ACPPlaces.processGeofence
+        window.geofence.onTransitionReceived = function (geofences) {
+            geofences.forEach(function (geo) {
+                console.log("Geofence transition detected", geo);
+                var region = {latitude:geo.latitude, longitude:geo.longitude, radius:geo.radius};
+                var geofence = {requestId:geo.id, circularRegion:region, expirationDuration:NEVER_EXPIRE};
+                console.log("Calling ACPPlaces.processGeofence: ", geofence);
+                // processGeofence called for Android and processRegionEvent called for iOS
+                ACPPlaces.processGeofence(geofence, geo.transitionType, handleCallback, handleError);
+            });
+        };
+
+        // called when geofence notification is clicked through
+        window.geofence.onNotificationClicked = (function (notificationData) {
+            console.log(notificationData);
+        });
+    }, function (error) {
+        console.log("Geofence: Error", error);
+    });
+}, false);
+
+// create geofences using cordova-plugin-geofence from POI's returned by ACPPlaces.getNearbyPointsOfInterest.
+function handlePois(result) {
+    var index;
+    const jsonArray = JSON.parse(result);
+    for (index = 0; index < jsonArray.length; index++) {
+        var json = jsonArray[index];
+        window.geofence.addOrUpdate({
+            id: json.Identifier,
+            latitude: json.Latitude,
+            longitude: json.Longitude,
+            radius: 1000,
+            transitionType: ACPPlaces.ACPRegionEventTypeEntry,
+            notification: {
+                id: 1,
+                title: json.POI,
+                text: "Geofence entered.",
+                icon: "",
+                openAppOnClick: true,
+                data: {name:'San Jose',
+                       id: json.Identifier
+                }
+            }
+        }).then(function () {
+            console.log("Geofence successfully added for: ", json.POI);
+        }, function (error) {
+            console.log("Adding geofence failed", error);
+        });
+        index++;
+    }
+    handleCallback(result);
+}
+
+// add a geofence on demand using cordova-plugin-geofence for testing
+function addGeofence() {
+    window.geofence.addOrUpdate({
+            id: "geofence-id",
+            latitude: 37.5630,
+            longitude: -122.3255,
+            radius: 1000,
+            transitionType: ACPPlaces.ACPRegionEventTypeEntry,
+            notification: {
+                id: 2,
+                title: "San Mateo",
+                text: "Geofence entered.",
+                icon: "",
+                openAppOnClick: true,
+                data: {name:'San Mateo',
+                       id: 'geofence-id'
+                }
+            }
+        }).then(function () {
+        console.log("Geofence successfully added for San Mateo");
+    }, function (error) {
+        console.log("Adding geofence failed", error);
+    });
+}
+
+
+    

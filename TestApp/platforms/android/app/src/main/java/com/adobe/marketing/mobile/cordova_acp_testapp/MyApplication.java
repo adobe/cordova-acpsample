@@ -13,6 +13,7 @@ import com.adobe.marketing.mobile.InvalidInitException;
 import com.adobe.marketing.mobile.Lifecycle;
 import com.adobe.marketing.mobile.LoggingMode;
 import com.adobe.marketing.mobile.MobileCore;
+import com.adobe.marketing.mobile.Places;
 import com.adobe.marketing.mobile.Signal;
 
 public class MyApplication extends Application {
@@ -30,6 +31,7 @@ public class MyApplication extends Application {
             Signal.registerExtension();
             Analytics.registerExtension();
             Griffon.registerExtension();
+            Places.registerExtension();
             MobileCore.start(new AdobeCallback() {
                 @Override
                 public void call(Object o) {

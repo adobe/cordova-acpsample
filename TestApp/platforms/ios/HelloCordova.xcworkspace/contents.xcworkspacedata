@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:adobe-sj.gpx">
+   </FileRef>
+   <FileRef
+      location = "group:downtown-sanmateo.gpx">
+   </FileRef>
+   <FileRef
       location = "group:HelloCordova.xcodeproj">
    </FileRef>
    <FileRef

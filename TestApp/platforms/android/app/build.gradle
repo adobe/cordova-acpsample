@@ -101,6 +101,7 @@ ext {
 apply from: "../cordova-acpcore/cordova_acp_testapp-ACPCore_Cordova.gradle"
 apply from: "../cordova-acpanalytics/cordova_acp_testapp-ACPAnalytics_Cordova.gradle"
 apply from: "../cordova-acpgriffon/cordova_acp_testapp-ACPGriffon_Cordova.gradle"
+apply from: "../cordova-acpplaces/cordova_acp_testapp-ACPPlaces_Cordova.gradle"
 // PLUGIN GRADLE EXTENSIONS END
 
 def hasBuildExtras1 = file('build-extras.gradle').exists()
@@ -296,6 +297,7 @@ dependencies {
     implementation fileTree(dir: 'libs', include: '*.jar')
     // SUB-PROJECT DEPENDENCIES START
     implementation(project(path: ":CordovaLib"))
+    implementation "com.google.android.gms:play-services-location:11.8.0"
     // SUB-PROJECT DEPENDENCIES END
 }
 

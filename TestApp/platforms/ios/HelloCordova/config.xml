@@ -19,6 +19,12 @@
         <param name="ios-package" value="CDVGestureHandler" />
         <param name="onload" value="true" />
     </feature>
+    <feature name="Geolocation">
+        <param name="ios-package" value="CDVLocation" />
+    </feature>
+    <feature name="GeofencePlugin">
+        <param name="ios-package" value="HWPGeofencePlugin" />
+    </feature>
     <feature name="ACPCore_Cordova">
         <param name="ios-package" value="ACPCore_Cordova" />
         <param name="onload" value="true" />
@@ -41,6 +47,10 @@
     </feature>
     <feature name="ACPGriffon_Cordova">
         <param name="ios-package" value="ACPGriffon_Cordova" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="ACPPlaces_Cordova">
+        <param name="ios-package" value="ACPPlaces_Cordova" />
         <param name="onload" value="true" />
     </feature>
     <name>HelloCordova</name>

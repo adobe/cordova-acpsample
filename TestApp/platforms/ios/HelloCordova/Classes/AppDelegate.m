@@ -33,6 +33,7 @@
 #import <ACPCore/ACPSignal.h>
 #import <ACPAnalytics/ACPAnalytics.h>
 #import <ACPGriffon/ACPGriffon.h>
+#import <ACPPlaces/ACPPlaces.h>
 
 @implementation AppDelegate
 
@@ -51,6 +52,7 @@
     [ACPSignal registerExtension];
     [ACPAnalytics registerExtension];
     [ACPGriffon registerExtension];
+    [ACPPlaces registerExtension];
 
     const UIApplicationState appState = application.applicationState;
     [ACPCore start:^{

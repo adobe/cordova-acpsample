@@ -8,21 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		0207DA581B56EA530066E2B4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0207DA571B56EA530066E2B4 /* Images.xcassets */; };
-		0BF571FB1974435E9FBF8973 /* ACPLifecycle_Cordova.m in Sources */ = {isa = PBXBuildFile; fileRef = 0545626A89524E0CB6F74AF8 /* ACPLifecycle_Cordova.m */; };
 		1D3623260D0F684500981E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		301BF552109A68D80062928A /* libCordova.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 301BF535109A57CC0062928A /* libCordova.a */; settings = {ATTRIBUTES = (Required, ); }; };
 		302D95F114D2391D003F00A1 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 302D95EF14D2391D003F00A1 /* MainViewController.m */; };
 		302D95F214D2391D003F00A1 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 302D95F014D2391D003F00A1 /* MainViewController.xib */; };
-		302EB3F9B626440C97CCC071 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BF98B37F7694E53A5F7839E /* SystemConfiguration.framework */; };
-		4301155D4B67445B87DC9D35 /* ACPSignal_Cordova.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9FE5F695B74588AB7213B9 /* ACPSignal_Cordova.m */; };
-		4E3A9C7AAAFD47ECB8F9E375 /* ACPCore_Cordova.m in Sources */ = {isa = PBXBuildFile; fileRef = BA92DF6CCDEA4A0F9D736CC0 /* ACPCore_Cordova.m */; };
 		6AFF5BF91D6E424B00AB3073 /* CDVLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */; };
 		6B19821034426CE10F590C2B /* Pods_HelloCordova.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 629E28809BF2201B9F9187C3 /* Pods_HelloCordova.framework */; };
 		D8586B36D4084AEFB39AAA86 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7829933345A5493B8B78F96F /* libsqlite3.dylib */; };
-		F9CF692B35BB4207AE307920 /* ACPIdentity_Cordova.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F6A50B847743AA94E4F883 /* ACPIdentity_Cordova.m */; };
-		4EF6FA21FC42486CAFD217EC /* ACPAnalytics_Cordova.m in Sources */ = {isa = PBXBuildFile; fileRef = 0101CEB7A84340E1B9ACC889 /* ACPAnalytics_Cordova.m */; };
-		80CBA68FA7C64837BD276434 /* ACPGriffon_Cordova.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B51FD224974451835D57C5 /* ACPGriffon_Cordova.m */; };
+		9C97C6C748E8441F9C9D85F2 /* CDVLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 086DDB54B43A49EB8B5BA575 /* CDVLocation.m */; };
+		C327271928DA4406AA4014E5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D9C77DBE7A44687977A5A8A /* CoreLocation.framework */; };
+		CDE34682CF8C411795DA34ED /* GeofencePlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6871D1A881524346B2A134BC /* GeofencePlugin.swift */; };
+		4233D183A83848509444AEB3 /* SwiftData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95F5B277D094A2D8686EC24 /* SwiftData.swift */; };
+		BEE2F724F1174533BCCFA989 /* SwiftyJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB6C37A92BD4D428FF26866 /* SwiftyJson.swift */; };
+		47CF089612D24312ABF1C9C8 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DCC457E721D491FAFBD1CC0 /* WebKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		F9C8C96317F24F8F847A11C3 /* ACPCore_Cordova.m in Sources */ = {isa = PBXBuildFile; fileRef = EE0AE95193444BEDB7F2B293 /* ACPCore_Cordova.m */; };
+		195F86CCA6D24E558E6A35FB /* ACPIdentity_Cordova.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ADB99D22AE940B4BD307E03 /* ACPIdentity_Cordova.m */; };
+		FDDD50D3F2D445F3A21C99FF /* ACPLifecycle_Cordova.m in Sources */ = {isa = PBXBuildFile; fileRef = EF0E1C72F9A24218A06E96E6 /* ACPLifecycle_Cordova.m */; };
+		1753285F10504AD68A024B52 /* ACPSignal_Cordova.m in Sources */ = {isa = PBXBuildFile; fileRef = D029EE6B6EA04FB7B81FCE33 /* ACPSignal_Cordova.m */; };
+		355AD337673F4C43A744A640 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C19BD32854E94A4B93F2A5A1 /* SystemConfiguration.framework */; };
+		F83CC9B202344078920285D3 /* ACPAnalytics_Cordova.m in Sources */ = {isa = PBXBuildFile; fileRef = 9185CF9FF4BD473A93E6F1EB /* ACPAnalytics_Cordova.m */; };
+		89E71CB1AC004FFE85293133 /* ACPGriffon_Cordova.m in Sources */ = {isa = PBXBuildFile; fileRef = F0DF098D666F4EB0BD107E4D /* ACPGriffon_Cordova.m */; };
+		FEC1355A15C54DAAA2D3133E /* ACPPlaces_Cordova.m in Sources */ = {isa = PBXBuildFile; fileRef = CE549EA159984FC3BA4C303D /* ACPPlaces_Cordova.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,8 +58,6 @@
 
 /* Begin PBXFileReference section */
 		0207DA571B56EA530066E2B4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = HelloCordova/Images.xcassets; sourceTree = SOURCE_ROOT; };
-		02F6A50B847743AA94E4F883 /* ACPIdentity_Cordova.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = ACPIdentity_Cordova.m; path = "cordova-acpcore/ACPIdentity_Cordova.m"; sourceTree = "<group>"; };
-		0545626A89524E0CB6F74AF8 /* ACPLifecycle_Cordova.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = ACPLifecycle_Cordova.m; path = "cordova-acpcore/ACPLifecycle_Cordova.m"; sourceTree = "<group>"; };
 		1D3623240D0F684500981E51 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		1D6058910D05DD3D006BFB54 /* HelloCordova.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloCordova.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,20 +72,31 @@
 		3047A5101AB8059700498E2A /* build-release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "build-release.xcconfig"; path = "cordova/build-release.xcconfig"; sourceTree = SOURCE_ROOT; };
 		3047A5111AB8059700498E2A /* build.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = build.xcconfig; path = cordova/build.xcconfig; sourceTree = SOURCE_ROOT; };
 		32CA4F630368D1EE00C91783 /* HelloCordova-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HelloCordova-Prefix.pch"; sourceTree = "<group>"; };
-		4A9FE5F695B74588AB7213B9 /* ACPSignal_Cordova.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = ACPSignal_Cordova.m; path = "cordova-acpcore/ACPSignal_Cordova.m"; sourceTree = "<group>"; };
-		4BF98B37F7694E53A5F7839E /* SystemConfiguration.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		629E28809BF2201B9F9187C3 /* Pods_HelloCordova.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelloCordova.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = CDVLaunchScreen.storyboard; path = HelloCordova/CDVLaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
 		7829933345A5493B8B78F96F /* libsqlite3.dylib */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		8D1107310486CEB800E47090 /* HelloCordova-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "HelloCordova-Info.plist"; path = "HelloCordova/HelloCordova-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = SOURCE_ROOT; };
-		BA92DF6CCDEA4A0F9D736CC0 /* ACPCore_Cordova.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = ACPCore_Cordova.m; path = "cordova-acpcore/ACPCore_Cordova.m"; sourceTree = "<group>"; };
 		E426BC84FDA745D79442572E /* Pods-HelloCordova.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloCordova.debug.xcconfig"; path = "Target Support Files/Pods-HelloCordova/Pods-HelloCordova.debug.xcconfig"; sourceTree = "<group>"; };
 		EB87FDF31871DA8E0020F90C /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; name = www; path = ../../www; sourceTree = "<group>"; };
 		EB87FDF41871DAF40020F90C /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = ../../config.xml; sourceTree = "<group>"; };
 		ED33DF2A687741AEAF9F8254 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Bridging-Header.h"; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = HelloCordova/config.xml; sourceTree = "<group>"; };
-		0101CEB7A84340E1B9ACC889 /* ACPAnalytics_Cordova.m */ = {isa = PBXFileReference; name = "ACPAnalytics_Cordova.m"; path = "cordova-acpanalytics/ACPAnalytics_Cordova.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		41B51FD224974451835D57C5 /* ACPGriffon_Cordova.m */ = {isa = PBXFileReference; name = "ACPGriffon_Cordova.m"; path = "cordova-acpgriffon/ACPGriffon_Cordova.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		086DDB54B43A49EB8B5BA575 /* CDVLocation.m */ = {isa = PBXFileReference; name = "CDVLocation.m"; path = "cordova-plugin-geolocation/CDVLocation.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		7FAFE8C129214073B0FF8269 /* CDVLocation.h */ = {isa = PBXFileReference; name = "CDVLocation.h"; path = "cordova-plugin-geolocation/CDVLocation.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		8D9C77DBE7A44687977A5A8A /* CoreLocation.framework */ = {isa = PBXFileReference; name = "CoreLocation.framework"; path = "System/Library/Frameworks/CoreLocation.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		6871D1A881524346B2A134BC /* GeofencePlugin.swift */ = {isa = PBXFileReference; name = "GeofencePlugin.swift"; path = "cordova-plugin-geofence/GeofencePlugin.swift"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.swift; explicitFileType = undefined; includeInIndex = 0; };
+		F95F5B277D094A2D8686EC24 /* SwiftData.swift */ = {isa = PBXFileReference; name = "SwiftData.swift"; path = "cordova-plugin-geofence/SwiftData.swift"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.swift; explicitFileType = undefined; includeInIndex = 0; };
+		DBB6C37A92BD4D428FF26866 /* SwiftyJson.swift */ = {isa = PBXFileReference; name = "SwiftyJson.swift"; path = "cordova-plugin-geofence/SwiftyJson.swift"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.swift; explicitFileType = undefined; includeInIndex = 0; };
+		5720D3D6E79D48E68707F4A8 /* Geofence-Plugin-Bridging-Header.h */ = {isa = PBXFileReference; name = "Geofence-Plugin-Bridging-Header.h"; path = "cordova-plugin-geofence/Geofence-Plugin-Bridging-Header.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		1DCC457E721D491FAFBD1CC0 /* WebKit.framework */ = {isa = PBXFileReference; name = "WebKit.framework"; path = "System/Library/Frameworks/WebKit.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		EE0AE95193444BEDB7F2B293 /* ACPCore_Cordova.m */ = {isa = PBXFileReference; name = "ACPCore_Cordova.m"; path = "cordova-acpcore/ACPCore_Cordova.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		3ADB99D22AE940B4BD307E03 /* ACPIdentity_Cordova.m */ = {isa = PBXFileReference; name = "ACPIdentity_Cordova.m"; path = "cordova-acpcore/ACPIdentity_Cordova.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		EF0E1C72F9A24218A06E96E6 /* ACPLifecycle_Cordova.m */ = {isa = PBXFileReference; name = "ACPLifecycle_Cordova.m"; path = "cordova-acpcore/ACPLifecycle_Cordova.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		D029EE6B6EA04FB7B81FCE33 /* ACPSignal_Cordova.m */ = {isa = PBXFileReference; name = "ACPSignal_Cordova.m"; path = "cordova-acpcore/ACPSignal_Cordova.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		C19BD32854E94A4B93F2A5A1 /* SystemConfiguration.framework */ = {isa = PBXFileReference; name = "SystemConfiguration.framework"; path = "System/Library/Frameworks/SystemConfiguration.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		9185CF9FF4BD473A93E6F1EB /* ACPAnalytics_Cordova.m */ = {isa = PBXFileReference; name = "ACPAnalytics_Cordova.m"; path = "cordova-acpanalytics/ACPAnalytics_Cordova.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		F0DF098D666F4EB0BD107E4D /* ACPGriffon_Cordova.m */ = {isa = PBXFileReference; name = "ACPGriffon_Cordova.m"; path = "cordova-acpgriffon/ACPGriffon_Cordova.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		CE549EA159984FC3BA4C303D /* ACPPlaces_Cordova.m */ = {isa = PBXFileReference; name = "ACPPlaces_Cordova.m"; path = "cordova-acpplaces/ACPPlaces_Cordova.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,8 +106,10 @@
 			files = (
 				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
 				D8586B36D4084AEFB39AAA86 /* libsqlite3.dylib in Frameworks */,
-				302EB3F9B626440C97CCC071 /* SystemConfiguration.framework in Frameworks */,
 				6B19821034426CE10F590C2B /* Pods_HelloCordova.framework in Frameworks */,
+				C327271928DA4406AA4014E5 /* CoreLocation.framework in Frameworks */,
+				47CF089612D24312ABF1C9C8 /* WebKit.framework in Frameworks */,
+				355AD337673F4C43A744A640 /* SystemConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,8 +182,10 @@
 			isa = PBXGroup;
 			children = (
 				7829933345A5493B8B78F96F /* libsqlite3.dylib */,
-				4BF98B37F7694E53A5F7839E /* SystemConfiguration.framework */,
 				629E28809BF2201B9F9187C3 /* Pods_HelloCordova.framework */,
+				8D9C77DBE7A44687977A5A8A /* CoreLocation.framework */,
+				1DCC457E721D491FAFBD1CC0 /* WebKit.framework */,
+				C19BD32854E94A4B93F2A5A1 /* SystemConfiguration.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -192,12 +212,19 @@
 		307C750510C5A3420062BCA9 /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
-				BA92DF6CCDEA4A0F9D736CC0 /* ACPCore_Cordova.m */,
-				02F6A50B847743AA94E4F883 /* ACPIdentity_Cordova.m */,
-				0545626A89524E0CB6F74AF8 /* ACPLifecycle_Cordova.m */,
-				4A9FE5F695B74588AB7213B9 /* ACPSignal_Cordova.m */,
-				0101CEB7A84340E1B9ACC889 /* ACPAnalytics_Cordova.m */,
-				41B51FD224974451835D57C5 /* ACPGriffon_Cordova.m */,
+				086DDB54B43A49EB8B5BA575 /* CDVLocation.m */,
+				7FAFE8C129214073B0FF8269 /* CDVLocation.h */,
+				6871D1A881524346B2A134BC /* GeofencePlugin.swift */,
+				F95F5B277D094A2D8686EC24 /* SwiftData.swift */,
+				DBB6C37A92BD4D428FF26866 /* SwiftyJson.swift */,
+				5720D3D6E79D48E68707F4A8 /* Geofence-Plugin-Bridging-Header.h */,
+				EE0AE95193444BEDB7F2B293 /* ACPCore_Cordova.m */,
+				3ADB99D22AE940B4BD307E03 /* ACPIdentity_Cordova.m */,
+				EF0E1C72F9A24218A06E96E6 /* ACPLifecycle_Cordova.m */,
+				D029EE6B6EA04FB7B81FCE33 /* ACPSignal_Cordova.m */,
+				9185CF9FF4BD473A93E6F1EB /* ACPAnalytics_Cordova.m */,
+				F0DF098D666F4EB0BD107E4D /* ACPGriffon_Cordova.m */,
+				CE549EA159984FC3BA4C303D /* ACPPlaces_Cordova.m */,
 			);
 			name = Plugins;
 			path = HelloCordova/Plugins;
@@ -356,12 +383,17 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
-				4E3A9C7AAAFD47ECB8F9E375 /* ACPCore_Cordova.m in Sources */,
-				F9CF692B35BB4207AE307920 /* ACPIdentity_Cordova.m in Sources */,
-				0BF571FB1974435E9FBF8973 /* ACPLifecycle_Cordova.m in Sources */,
-				4301155D4B67445B87DC9D35 /* ACPSignal_Cordova.m in Sources */,
-				4EF6FA21FC42486CAFD217EC /* ACPAnalytics_Cordova.m in Sources */,
-				80CBA68FA7C64837BD276434 /* ACPGriffon_Cordova.m in Sources */,
+				9C97C6C748E8441F9C9D85F2 /* CDVLocation.m in Sources */,
+				CDE34682CF8C411795DA34ED /* GeofencePlugin.swift in Sources */,
+				4233D183A83848509444AEB3 /* SwiftData.swift in Sources */,
+				BEE2F724F1174533BCCFA989 /* SwiftyJson.swift in Sources */,
+				F9C8C96317F24F8F847A11C3 /* ACPCore_Cordova.m in Sources */,
+				195F86CCA6D24E558E6A35FB /* ACPIdentity_Cordova.m in Sources */,
+				FDDD50D3F2D445F3A21C99FF /* ACPLifecycle_Cordova.m in Sources */,
+				1753285F10504AD68A024B52 /* ACPSignal_Cordova.m in Sources */,
+				F83CC9B202344078920285D3 /* ACPAnalytics_Cordova.m in Sources */,
+				89E71CB1AC004FFE85293133 /* ACPGriffon_Cordova.m in Sources */,
+				FEC1355A15C54DAAA2D3133E /* ACPPlaces_Cordova.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,6 +430,10 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.adobe.marketing.mobile.cordova_acp_testapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/$(PROJECT_NAME)/Bridging-Header.h";
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				SWIFT_VERSION = 4.0;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -421,6 +457,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.adobe.marketing.mobile.cordova_acp_testapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/$(PROJECT_NAME)/Bridging-Header.h";
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -464,6 +503,10 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = NO;
 				WK_WEB_VIEW_ONLY = 0;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/$(PROJECT_NAME)/Bridging-Header.h";
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				SWIFT_VERSION = 4.0;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -505,6 +548,9 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = NO;
 				WK_WEB_VIEW_ONLY = 0;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/$(PROJECT_NAME)/Bridging-Header.h";
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};

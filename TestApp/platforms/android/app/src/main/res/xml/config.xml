@@ -1,5 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.adobe.marketing.mobile.cordova_acp_testapp" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <feature name="Geolocation">
+        <param name="android-package" value="org.apache.cordova.geolocation.Geolocation" />
+    </feature>
     <feature name="ACPCore_Cordova">
         <param name="android-package" value="com.adobe.marketing.mobile.cordova.ACPCore_Cordova" />
         <param name="onload" value="true" />
@@ -23,6 +26,13 @@
     <feature name="ACPGriffon_Cordova">
         <param name="android-package" value="com.adobe.marketing.mobile.cordova.ACPGriffon_Cordova" />
         <param name="onload" value="true" />
+    </feature>
+    <feature name="ACPPlaces_Cordova">
+        <param name="android-package" value="com.adobe.marketing.mobile.cordova.ACPPlaces_Cordova" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="GeofencePlugin">
+        <param name="android-package" value="com.cowbell.cordova.geofence.GeofencePlugin" />
     </feature>
     <name>HelloCordova</name>
     <description>

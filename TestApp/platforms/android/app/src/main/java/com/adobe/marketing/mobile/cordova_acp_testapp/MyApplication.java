@@ -15,6 +15,7 @@ import com.adobe.marketing.mobile.LoggingMode;
 import com.adobe.marketing.mobile.MobileCore;
 import com.adobe.marketing.mobile.Places;
 import com.adobe.marketing.mobile.Signal;
+import com.adobe.marketing.mobile.UserProfile;
 
 public class MyApplication extends Application {
 
@@ -32,6 +33,7 @@ public class MyApplication extends Application {
             Analytics.registerExtension();
             Griffon.registerExtension();
             Places.registerExtension();
+            UserProfile.registerExtension();
             MobileCore.start(new AdobeCallback() {
                 @Override
                 public void call(Object o) {

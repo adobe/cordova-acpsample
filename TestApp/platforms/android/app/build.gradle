@@ -102,6 +102,7 @@ apply from: "../cordova-acpcore/cordova_acp_testapp-ACPCore_Cordova.gradle"
 apply from: "../cordova-acpanalytics/cordova_acp_testapp-ACPAnalytics_Cordova.gradle"
 apply from: "../cordova-acpgriffon/cordova_acp_testapp-ACPGriffon_Cordova.gradle"
 apply from: "../cordova-acpplaces/cordova_acp_testapp-ACPPlaces_Cordova.gradle"
+apply from: "../cordova-acpuserprofile/cordova_acp_testapp-ACPUserProfile_Cordova.gradle"
 // PLUGIN GRADLE EXTENSIONS END
 
 def hasBuildExtras1 = file('build-extras.gradle').exists()

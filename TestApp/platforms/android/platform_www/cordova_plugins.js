@@ -91,6 +91,14 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
       "clobbers": [
         "ACPPlaces"
       ]
+    },
+    {
+      "id": "cordova-acpuserprofile.cordova-acpuserprofile",
+      "file": "plugins/cordova-acpuserprofile/www/ACPUserProfile.js",
+      "pluginId": "cordova-acpuserprofile",
+      "clobbers": [
+        "ACPUserProfile"
+      ]
     }
   ];
   module.exports.metadata = {
@@ -101,6 +109,7 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
     "cordova-acpcore": "0.0.1",
     "cordova-acpanalytics": "0.0.1",
     "cordova-acpgriffon": "0.0.1",
-    "cordova-acpplaces": "0.0.1"
+    "cordova-acpplaces": "0.0.1",
+    "cordova-acpuserprofile": "0.0.1"
   };
 });

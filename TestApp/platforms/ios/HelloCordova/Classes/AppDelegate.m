@@ -34,6 +34,7 @@
 #import <ACPAnalytics/ACPAnalytics.h>
 #import <ACPGriffon/ACPGriffon.h>
 #import <ACPPlaces/ACPPlaces.h>
+#import <ACPUserProfile/ACPUserProfile.h>
 
 @implementation AppDelegate
 
@@ -53,6 +54,7 @@
     [ACPAnalytics registerExtension];
     [ACPGriffon registerExtension];
     [ACPPlaces registerExtension];
+    [ACPUserProfile registerExtension];
 
     const UIApplicationState appState = application.applicationState;
     [ACPCore start:^{

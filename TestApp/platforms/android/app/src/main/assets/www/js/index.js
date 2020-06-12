@@ -102,6 +102,14 @@ function registerControls() {
     document.getElementById("getCurrentLocation").addEventListener("click", getLocation);
     // manually add geofence using cordova-plugin-geofence for testing purposes
     document.getElementById("addGeofence").addEventListener("click", addGeofence);
+
+    // acpuserprofile
+    document.getElementById("extensionVersionUserProfile").addEventListener("click", extensionVersionUserProfile);
+    document.getElementById("getUserAttributes").addEventListener("click", getUserAttributes);
+    document.getElementById("removeUserAttribute").addEventListener("click", removeUserAttribute);
+    document.getElementById("removeUserAttributes").addEventListener("click", removeUserAttributes);
+    document.getElementById("updateUserAttribute").addEventListener("click", updateUserAttribute);
+    document.getElementById("updateUserAttributes").addEventListener("click", updateUserAttributes);
 }
 
 // acpcore methods
@@ -270,6 +278,58 @@ function getNearbyPointsOfInterest() {
 
 function setAuthorizationStatus() {
     ACPPlaces.setAuthorizationStatus(ACPPlaces.AuthorizationStatusAlways, handleCallback, handleError);
+}
+
+// acpuserprofile methods
+function extensionVersionUserProfile() {
+    ACPUserProfile.extensionVersion(handleCallback, handleError);
+}
+
+function getUserAttributes() {
+    var attributeNames = new Array();
+    attributeNames.push("first name");
+    attributeNames.push("age");
+    attributeNames.push("vehicles");
+    attributeNames.push("colors");
+    attributeNames.push("phone number");
+    attributeNames.push("state");
+    ACPUserProfile.getUserAttributes(attributeNames, handleCallback, handleError);
+}
+
+function removeUserAttribute() {
+    ACPUserProfile.removeUserAttribute("state", handleCallback, handleError);
+}
+
+function removeUserAttributes() {
+    var attributeNames = new Array();
+    attributeNames.push("vehicles");
+    attributeNames.push("colors");
+    attributeNames.push("phone number");
+    ACPUserProfile.removeUserAttributes(attributeNames, handleCallback, handleError);
+}
+
+function updateUserAttribute() {
+    var vehicles = new Array();
+    vehicles.push("truck");
+    vehicles.push("train");
+    vehicles.push("jet");
+    vehicles.push("blimp");
+    ACPUserProfile.updateUserAttribute("vehicles", vehicles, handleCallback, handleError);
+}
+
+function updateUserAttributes() {
+    var firstName = "john";
+    var age = 40;
+    var state = "California";
+    var phoneNumber = "555-555-5555";
+    var vehicles = new Array();
+    vehicles.push("car");
+    vehicles.push("boat");
+    vehicles.push("airplane");
+    vehicles.push("motorcycle");
+    var colors = {"color1":"red", "color2":"blue", "color3":"green", "color4":"silver"};
+    var attributeMap = {"first name":firstName, "age":age, "state":state, "phone number":phoneNumber, "vehicles":vehicles, "colors":colors};
+    ACPUserProfile.updateUserAttributes(attributeMap, handleCallback, handleError);
 }
 
 // ==========================================================================================

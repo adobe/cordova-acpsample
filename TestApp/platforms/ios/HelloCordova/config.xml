@@ -25,6 +25,10 @@
     <feature name="GeofencePlugin">
         <param name="ios-package" value="HWPGeofencePlugin" />
     </feature>
+    <feature name="ACPUserProfile_Cordova">
+        <param name="ios-package" value="ACPUserProfile_Cordova" />
+        <param name="onload" value="true" />
+    </feature>
     <feature name="ACPCore_Cordova">
         <param name="ios-package" value="ACPCore_Cordova" />
         <param name="onload" value="true" />

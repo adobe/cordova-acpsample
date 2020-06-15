@@ -12,6 +12,7 @@ uninstall-plugins:
 	cd TestApp && cordova plugin remove cordova-acpanalytics
 	cd TestApp && cordova plugin remove cordova-acpgriffon
 	cd TestApp && cordova plugin remove cordova-acpplaces
+	cd TestApp && cordova plugin remove cordova-acpuserprofile
 	cd TestApp && cordova plugin remove cordova-acpcore
 
 install-plugins:
@@ -19,6 +20,7 @@ install-plugins:
 	cd TestApp && cordova plugin add https://github.com/adobe/cordova-acpanalytics.git
 	cd TestApp && cordova plugin add https://github.com/adobe/cordova-acpgriffon.git
 	cd TestApp && cordova plugin add https://github.com/adobe/cordova-acpplaces.git
+	cd TestApp && cordova plugin add https://github.com/adobe/cordova-acpuserprofile.git	
 
 update-cordova-app:
 	cd TestApp && cordova build

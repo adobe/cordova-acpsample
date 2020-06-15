@@ -17,6 +17,7 @@
     "@adobe/cordova-acpcore": "git+https://github.com/adobe/cordova-acpcore.git",
     "@adobe/cordova-acpgriffon": "git+https://github.com/adobe/cordova-acpgriffon.git",
     "@adobe/cordova-acpplaces": "git+https://github.com/adobe/cordova-acpplaces.git",
+    "@adobe/cordova-acpuserprofile": "git+https://github.com/adobe/cordova-acpuserprofile.git",
     "cordova-android": "^8.1.0",
     "cordova-ios": "^5.1.1",
     "cordova-plugin-add-swift-support": "^2.0.2",
@@ -40,7 +41,8 @@
       "cordova-acpcore": {},
       "cordova-acpanalytics": {},
       "cordova-acpgriffon": {},
-      "cordova-acpplaces": {}
+      "cordova-acpplaces": {},
+      "cordova-acpuserprofile": {}
     },
     "platforms": [
       "ios",

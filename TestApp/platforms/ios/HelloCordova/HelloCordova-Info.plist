@@ -24,10 +24,25 @@
 	<string>1.0.0</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Enable location tracking always so geofences can be tracked while the app is in the background.</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Enable location tracking always so geofences can be tracked while the app is in the background.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>If set to when in use, geofences are not tracked while the app is in the background.</string>
 	<key>NSMainNibFile</key>
 	<string/>
 	<key>NSMainNibFile~ipad</key>
 	<string/>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>location</string>
+	</array>
 	<key>UIRequiresFullScreen</key>
 	<true/>
 	<key>UISupportedInterfaceOrientations</key>
@@ -42,21 +57,6 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
-	</array>
-	<key>NSAppTransportSecurity</key>
-	<dict>
-		<key>NSAllowsArbitraryLoads</key>
-		<true/>
-	</dict>
-	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>${EXECUTABLE_NAME} would like to use your location to determine proximity to walks and points of interest.</string>
-	<key>NSLocationAlwaysUsageDescription</key>
-	<string>${EXECUTABLE_NAME} would like to use your location to determine proximity to walks and points of interest.</string>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>${EXECUTABLE_NAME} uses your location to determine proximity to walks and points of interest.</string>
-	<key>UIBackgroundModes</key>
-	<array>
-		<string>remote-notification</string>
 	</array>
 </dict>
 </plist>

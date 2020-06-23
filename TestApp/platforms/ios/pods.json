@@ -2,13 +2,13 @@
     "declarations": {
         "use_frameworks!": {
             "declaration": "use_frameworks!",
-            "count": 5
+            "count": 6
         }
     },
     "sources": {
         "https://github.com/CocoaPods/Specs.git": {
             "source": "https://github.com/CocoaPods/Specs.git",
-            "count": 5
+            "count": 6
         }
     },
     "libraries": {
@@ -27,14 +27,19 @@
             "spec": ">= 1.1.0",
             "count": 1
         },
+        "ACPUserProfile": {
+            "name": "ACPUserProfile",
+            "spec": ">= 2.1.0",
+            "count": 1
+        },
         "ACPPlaces": {
             "name": "ACPPlaces",
             "spec": ">= 1.3.1",
             "count": 1
         },
-        "ACPUserProfile": {
-            "name": "ACPUserProfile",
-            "spec": ">= 2.1.0",
+        "ACPPlacesMonitor": {
+            "name": "ACPPlacesMonitor",
+            "spec": ">= 2.1.3",
             "count": 1
         }
     }

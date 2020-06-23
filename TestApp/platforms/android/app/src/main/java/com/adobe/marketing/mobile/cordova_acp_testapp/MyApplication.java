@@ -40,8 +40,8 @@ public class MyApplication extends Application {
             MobileCore.start(new AdobeCallback() {
                 @Override
                 public void call(Object o) {
-                    // property "steve-places" on obu mobile5: launch-EN06755a968baf4d0dac5159fe1584479f-development
-                    MobileCore.configureWithAppID("launch-EN06755a968baf4d0dac5159fe1584479f-development");
+                    // property "aep-sdk-cordova-sample" on obu mobile5
+                    MobileCore.configureWithAppID("94f571f308d5/bda071acf896/launch-189f3f522ee2-development");
                 }
             });
         } catch (InvalidInitException e) {

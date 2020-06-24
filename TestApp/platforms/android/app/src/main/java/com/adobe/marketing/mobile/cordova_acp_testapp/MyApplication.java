@@ -16,6 +16,7 @@ import com.adobe.marketing.mobile.MobileCore;
 import com.adobe.marketing.mobile.Places;
 import com.adobe.marketing.mobile.Signal;
 import com.adobe.marketing.mobile.UserProfile;
+import com.adobe.marketing.mobile.PlacesMonitor;
 
 public class MyApplication extends Application {
 
@@ -27,6 +28,7 @@ public class MyApplication extends Application {
         MobileCore.setLogLevel(LoggingMode.VERBOSE);
 
         try {
+            // initialization and lifecycle should all be done natively
             Identity.registerExtension();
             Lifecycle.registerExtension();
             Signal.registerExtension();
@@ -34,10 +36,12 @@ public class MyApplication extends Application {
             Griffon.registerExtension();
             Places.registerExtension();
             UserProfile.registerExtension();
+            PlacesMonitor.registerExtension();
             MobileCore.start(new AdobeCallback() {
                 @Override
                 public void call(Object o) {
-                    MobileCore.configureWithAppID("launch-ENf8ed5382efc84d5b81a9be8dcc231be1-development");
+                    // property "aep-sdk-cordova-sample" on obu mobile5
+                    MobileCore.configureWithAppID("94f571f308d5/bda071acf896/launch-189f3f522ee2-development");
                 }
             });
         } catch (InvalidInitException e) {

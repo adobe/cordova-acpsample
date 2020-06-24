@@ -35,6 +35,7 @@
 #import <ACPGriffon/ACPGriffon.h>
 #import <ACPPlaces/ACPPlaces.h>
 #import <ACPUserProfile/ACPUserProfile.h>
+#import <ACPPlacesMonitor/ACPPlacesMonitor.h>
 
 @implementation AppDelegate
 
@@ -45,8 +46,8 @@
     // todo setWrapperType
 
     // initialization and lifecycle should all be done natively
-    // property "steve-places" on obu mobile5: launch-EN06755a968baf4d0dac5159fe1584479f-development
-    [ACPCore configureWithAppId:@"launch-EN06755a968baf4d0dac5159fe1584479f-development"];
+    // property "aep-sdk-cordova-sample" on obu mobile5
+    [ACPCore configureWithAppId:@"94f571f308d5/bda071acf896/launch-189f3f522ee2-development"];
 
     [ACPIdentity registerExtension];
     [ACPLifecycle registerExtension];
@@ -54,6 +55,7 @@
     [ACPAnalytics registerExtension];
     [ACPGriffon registerExtension];
     [ACPPlaces registerExtension];
+    [ACPPlacesMonitor registerExtension];
     [ACPUserProfile registerExtension];
 
     const UIApplicationState appState = application.applicationState;

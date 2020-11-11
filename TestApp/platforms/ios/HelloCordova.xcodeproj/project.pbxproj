@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0207DA581B56EA530066E2B4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0207DA571B56EA530066E2B4 /* Images.xcassets */; };
-		0F2D61536BC940338EC8FAD2 /* ACPLifecycle_Cordova.m in Sources */ = {isa = PBXBuildFile; fileRef = BDB45037F18345B9A0F29A7B /* ACPLifecycle_Cordova.m */; };
-		10805D0E0F454FF3A79DC858 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4575D9062BCF46F18A043C56 /* SystemConfiguration.framework */; };
 		1D3623260D0F684500981E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		301BF552109A68D80062928A /* libCordova.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 301BF535109A57CC0062928A /* libCordova.a */; settings = {ATTRIBUTES = (Required, ); }; };
@@ -17,16 +15,18 @@
 		302D95F214D2391D003F00A1 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 302D95F014D2391D003F00A1 /* MainViewController.xib */; };
 		415D1D314670EA3BBBFC97CF /* Pods_HelloCordova.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E957ED03E01306A219F0321E /* Pods_HelloCordova.framework */; };
 		6AFF5BF91D6E424B00AB3073 /* CDVLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */; };
-		87639DBB4DD54F51AEB837B1 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6963C2A8DDA84D8CB149C57B /* libsqlite3.dylib */; };
 		A0CE3D347F974473B5F33C7B /* CDVDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ED3B32C295743B5AD24E565 /* CDVDevice.m */; };
-		AAA27D87361E4466BF1603A0 /* ACPCore_Cordova.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E43816C3CDB4400B8B70B5F /* ACPCore_Cordova.m */; };
-		F832679248AD420EA345F79E /* ACPSignal_Cordova.m in Sources */ = {isa = PBXBuildFile; fileRef = CB471AA6EC474DC2891EC295 /* ACPSignal_Cordova.m */; };
-		FCC9D6C0C93B48D29530D408 /* ACPIdentity_Cordova.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EE1968FF7824A30A2A78CA7 /* ACPIdentity_Cordova.m */; };
-		6D06A2B18F5243A0845A200F /* ACPAnalytics_Cordova.m in Sources */ = {isa = PBXBuildFile; fileRef = FBE64B4359EA44BDBAB37842 /* ACPAnalytics_Cordova.m */; };
-		B5263BCA5EBF40898B5B2CE7 /* ACPGriffon_Cordova.m in Sources */ = {isa = PBXBuildFile; fileRef = B081C62720614048B2C29566 /* ACPGriffon_Cordova.m */; };
-		F5909A7B2B8F4B8F8D20AC5E /* ACPUserProfile_Cordova.m in Sources */ = {isa = PBXBuildFile; fileRef = 8032708010644B7DAB010598 /* ACPUserProfile_Cordova.m */; };
-		FD51923EC9584215BD2ABDC9 /* ACPPlaces_Cordova.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DC822F767424BF48F59FB49 /* ACPPlaces_Cordova.m */; };
-		9627C785A9C84DA797D530E4 /* ACPPlacesMonitor_Cordova.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C7C623836D460AB72EEF5F /* ACPPlacesMonitor_Cordova.m */; };
+		34F437FACFFA46A0BFF45710 /* ACPCore_Cordova.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FFAC52BE0D84621A0D238DC /* ACPCore_Cordova.m */; };
+		644B67F623F843E9BD92DC35 /* ACPIdentity_Cordova.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE1D3900F7346A490A7E8C7 /* ACPIdentity_Cordova.m */; };
+		9EC10754B59B40B9A5047F8F /* ACPLifecycle_Cordova.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D57EFA49A54C1E95671383 /* ACPLifecycle_Cordova.m */; };
+		5E959AD77B1C4413AE54A00B /* ACPSignal_Cordova.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ECAA75F2FDE427B8A904898 /* ACPSignal_Cordova.m */; };
+		6DCC1EC4C3AE4D29AAC0E15E /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B05B7B3245D4F47A0230B4B /* libsqlite3.dylib */; };
+		ABAE061B9D644FC7816C4C36 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3539CA49665F462AAA0A9DF6 /* SystemConfiguration.framework */; };
+		9A637624D56B4FCC9BF69D52 /* ACPAnalytics_Cordova.m in Sources */ = {isa = PBXBuildFile; fileRef = 81236832A656449EB4850893 /* ACPAnalytics_Cordova.m */; };
+		0FD526E1FF234D99A79AC558 /* AEPAssurance_Cordova.m in Sources */ = {isa = PBXBuildFile; fileRef = D3FAAB5D6929434C8D36E4D4 /* AEPAssurance_Cordova.m */; };
+		1E1A4F6DB1574161B0785CD3 /* ACPUserProfile_Cordova.m in Sources */ = {isa = PBXBuildFile; fileRef = E1AF5BE684C7456A82DD646A /* ACPUserProfile_Cordova.m */; };
+		7F8E281A9A7B4B5A86B4BDD2 /* ACPPlaces_Cordova.m in Sources */ = {isa = PBXBuildFile; fileRef = 10D769D8B9A24BBE81404719 /* ACPPlaces_Cordova.m */; };
+		CBD8AD5EAA2041BCA75A3A53 /* ACPPlacesMonitor_Cordova.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5C29C565FF467AB3DEF8DA /* ACPPlacesMonitor_Cordova.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,27 +69,27 @@
 		3047A5101AB8059700498E2A /* build-release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "build-release.xcconfig"; path = "cordova/build-release.xcconfig"; sourceTree = SOURCE_ROOT; };
 		3047A5111AB8059700498E2A /* build.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = build.xcconfig; path = cordova/build.xcconfig; sourceTree = SOURCE_ROOT; };
 		32CA4F630368D1EE00C91783 /* HelloCordova-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HelloCordova-Prefix.pch"; sourceTree = "<group>"; };
-		3EE1968FF7824A30A2A78CA7 /* ACPIdentity_Cordova.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = ACPIdentity_Cordova.m; path = "cordova-acpcore/ACPIdentity_Cordova.m"; sourceTree = "<group>"; };
-		4575D9062BCF46F18A043C56 /* SystemConfiguration.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		5ED3B32C295743B5AD24E565 /* CDVDevice.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVDevice.m; path = "cordova-plugin-device/CDVDevice.m"; sourceTree = "<group>"; };
-		6963C2A8DDA84D8CB149C57B /* libsqlite3.dylib */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = CDVLaunchScreen.storyboard; path = HelloCordova/CDVLaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
 		8D1107310486CEB800E47090 /* HelloCordova-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "HelloCordova-Info.plist"; path = "HelloCordova/HelloCordova-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = SOURCE_ROOT; };
-		9E43816C3CDB4400B8B70B5F /* ACPCore_Cordova.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = ACPCore_Cordova.m; path = "cordova-acpcore/ACPCore_Cordova.m"; sourceTree = "<group>"; };
-		BDB45037F18345B9A0F29A7B /* ACPLifecycle_Cordova.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = ACPLifecycle_Cordova.m; path = "cordova-acpcore/ACPLifecycle_Cordova.m"; sourceTree = "<group>"; };
 		BDCDA9D907534CDDA0FE192D /* CDVDevice.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVDevice.h; path = "cordova-plugin-device/CDVDevice.h"; sourceTree = "<group>"; };
-		CB471AA6EC474DC2891EC295 /* ACPSignal_Cordova.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = ACPSignal_Cordova.m; path = "cordova-acpcore/ACPSignal_Cordova.m"; sourceTree = "<group>"; };
 		E426BC84FDA745D79442572E /* Pods-HelloCordova.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloCordova.debug.xcconfig"; path = "Target Support Files/Pods-HelloCordova/Pods-HelloCordova.debug.xcconfig"; sourceTree = "<group>"; };
 		E957ED03E01306A219F0321E /* Pods_HelloCordova.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelloCordova.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB87FDF31871DA8E0020F90C /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; name = www; path = ../../www; sourceTree = "<group>"; };
 		EB87FDF41871DAF40020F90C /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = ../../config.xml; sourceTree = "<group>"; };
 		ED33DF2A687741AEAF9F8254 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = HelloCordova/config.xml; sourceTree = "<group>"; };
-		FBE64B4359EA44BDBAB37842 /* ACPAnalytics_Cordova.m */ = {isa = PBXFileReference; name = "ACPAnalytics_Cordova.m"; path = "cordova-acpanalytics/ACPAnalytics_Cordova.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		B081C62720614048B2C29566 /* ACPGriffon_Cordova.m */ = {isa = PBXFileReference; name = "ACPGriffon_Cordova.m"; path = "cordova-acpgriffon/ACPGriffon_Cordova.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		8032708010644B7DAB010598 /* ACPUserProfile_Cordova.m */ = {isa = PBXFileReference; name = "ACPUserProfile_Cordova.m"; path = "cordova-acpuserprofile/ACPUserProfile_Cordova.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		7DC822F767424BF48F59FB49 /* ACPPlaces_Cordova.m */ = {isa = PBXFileReference; name = "ACPPlaces_Cordova.m"; path = "cordova-acpplaces/ACPPlaces_Cordova.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		51C7C623836D460AB72EEF5F /* ACPPlacesMonitor_Cordova.m */ = {isa = PBXFileReference; name = "ACPPlacesMonitor_Cordova.m"; path = "cordova-acpplacesmonitor/ACPPlacesMonitor_Cordova.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		9FFAC52BE0D84621A0D238DC /* ACPCore_Cordova.m */ = {isa = PBXFileReference; name = "ACPCore_Cordova.m"; path = "cordova-acpcore/ACPCore_Cordova.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		AAE1D3900F7346A490A7E8C7 /* ACPIdentity_Cordova.m */ = {isa = PBXFileReference; name = "ACPIdentity_Cordova.m"; path = "cordova-acpcore/ACPIdentity_Cordova.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		84D57EFA49A54C1E95671383 /* ACPLifecycle_Cordova.m */ = {isa = PBXFileReference; name = "ACPLifecycle_Cordova.m"; path = "cordova-acpcore/ACPLifecycle_Cordova.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		9ECAA75F2FDE427B8A904898 /* ACPSignal_Cordova.m */ = {isa = PBXFileReference; name = "ACPSignal_Cordova.m"; path = "cordova-acpcore/ACPSignal_Cordova.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		6B05B7B3245D4F47A0230B4B /* libsqlite3.dylib */ = {isa = PBXFileReference; name = "libsqlite3.dylib"; path = "usr/lib/libsqlite3.dylib"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = compiled.mach-o.dylib; explicitFileType = undefined; includeInIndex = 0; };
+		3539CA49665F462AAA0A9DF6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; name = "SystemConfiguration.framework"; path = "System/Library/Frameworks/SystemConfiguration.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		81236832A656449EB4850893 /* ACPAnalytics_Cordova.m */ = {isa = PBXFileReference; name = "ACPAnalytics_Cordova.m"; path = "cordova-acpanalytics/ACPAnalytics_Cordova.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		D3FAAB5D6929434C8D36E4D4 /* AEPAssurance_Cordova.m */ = {isa = PBXFileReference; name = "AEPAssurance_Cordova.m"; path = "cordova-aepassurance/AEPAssurance_Cordova.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		E1AF5BE684C7456A82DD646A /* ACPUserProfile_Cordova.m */ = {isa = PBXFileReference; name = "ACPUserProfile_Cordova.m"; path = "cordova-acpuserprofile/ACPUserProfile_Cordova.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		10D769D8B9A24BBE81404719 /* ACPPlaces_Cordova.m */ = {isa = PBXFileReference; name = "ACPPlaces_Cordova.m"; path = "cordova-acpplaces/ACPPlaces_Cordova.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		2C5C29C565FF467AB3DEF8DA /* ACPPlacesMonitor_Cordova.m */ = {isa = PBXFileReference; name = "ACPPlacesMonitor_Cordova.m"; path = "cordova-acpplacesmonitor/ACPPlacesMonitor_Cordova.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,9 +98,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
-				87639DBB4DD54F51AEB837B1 /* libsqlite3.dylib in Frameworks */,
-				10805D0E0F454FF3A79DC858 /* SystemConfiguration.framework in Frameworks */,
 				415D1D314670EA3BBBFC97CF /* Pods_HelloCordova.framework in Frameworks */,
+				6DCC1EC4C3AE4D29AAC0E15E /* libsqlite3.dylib in Frameworks */,
+				ABAE061B9D644FC7816C4C36 /* SystemConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,9 +172,9 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6963C2A8DDA84D8CB149C57B /* libsqlite3.dylib */,
-				4575D9062BCF46F18A043C56 /* SystemConfiguration.framework */,
 				E957ED03E01306A219F0321E /* Pods_HelloCordova.framework */,
+				6B05B7B3245D4F47A0230B4B /* libsqlite3.dylib */,
+				3539CA49665F462AAA0A9DF6 /* SystemConfiguration.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -203,15 +203,15 @@
 			children = (
 				5ED3B32C295743B5AD24E565 /* CDVDevice.m */,
 				BDCDA9D907534CDDA0FE192D /* CDVDevice.h */,
-				9E43816C3CDB4400B8B70B5F /* ACPCore_Cordova.m */,
-				3EE1968FF7824A30A2A78CA7 /* ACPIdentity_Cordova.m */,
-				BDB45037F18345B9A0F29A7B /* ACPLifecycle_Cordova.m */,
-				CB471AA6EC474DC2891EC295 /* ACPSignal_Cordova.m */,
-				FBE64B4359EA44BDBAB37842 /* ACPAnalytics_Cordova.m */,
-				B081C62720614048B2C29566 /* ACPGriffon_Cordova.m */,
-				8032708010644B7DAB010598 /* ACPUserProfile_Cordova.m */,
-				7DC822F767424BF48F59FB49 /* ACPPlaces_Cordova.m */,
-				51C7C623836D460AB72EEF5F /* ACPPlacesMonitor_Cordova.m */,
+				9FFAC52BE0D84621A0D238DC /* ACPCore_Cordova.m */,
+				AAE1D3900F7346A490A7E8C7 /* ACPIdentity_Cordova.m */,
+				84D57EFA49A54C1E95671383 /* ACPLifecycle_Cordova.m */,
+				9ECAA75F2FDE427B8A904898 /* ACPSignal_Cordova.m */,
+				81236832A656449EB4850893 /* ACPAnalytics_Cordova.m */,
+				D3FAAB5D6929434C8D36E4D4 /* AEPAssurance_Cordova.m */,
+				E1AF5BE684C7456A82DD646A /* ACPUserProfile_Cordova.m */,
+				10D769D8B9A24BBE81404719 /* ACPPlaces_Cordova.m */,
+				2C5C29C565FF467AB3DEF8DA /* ACPPlacesMonitor_Cordova.m */,
 			);
 			name = Plugins;
 			path = HelloCordova/Plugins;
@@ -375,15 +375,15 @@
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
 				A0CE3D347F974473B5F33C7B /* CDVDevice.m in Sources */,
-				AAA27D87361E4466BF1603A0 /* ACPCore_Cordova.m in Sources */,
-				FCC9D6C0C93B48D29530D408 /* ACPIdentity_Cordova.m in Sources */,
-				0F2D61536BC940338EC8FAD2 /* ACPLifecycle_Cordova.m in Sources */,
-				F832679248AD420EA345F79E /* ACPSignal_Cordova.m in Sources */,
-				6D06A2B18F5243A0845A200F /* ACPAnalytics_Cordova.m in Sources */,
-				B5263BCA5EBF40898B5B2CE7 /* ACPGriffon_Cordova.m in Sources */,
-				F5909A7B2B8F4B8F8D20AC5E /* ACPUserProfile_Cordova.m in Sources */,
-				FD51923EC9584215BD2ABDC9 /* ACPPlaces_Cordova.m in Sources */,
-				9627C785A9C84DA797D530E4 /* ACPPlacesMonitor_Cordova.m in Sources */,
+				34F437FACFFA46A0BFF45710 /* ACPCore_Cordova.m in Sources */,
+				644B67F623F843E9BD92DC35 /* ACPIdentity_Cordova.m in Sources */,
+				9EC10754B59B40B9A5047F8F /* ACPLifecycle_Cordova.m in Sources */,
+				5E959AD77B1C4413AE54A00B /* ACPSignal_Cordova.m in Sources */,
+				9A637624D56B4FCC9BF69D52 /* ACPAnalytics_Cordova.m in Sources */,
+				0FD526E1FF234D99A79AC558 /* AEPAssurance_Cordova.m in Sources */,
+				1E1A4F6DB1574161B0785CD3 /* ACPUserProfile_Cordova.m in Sources */,
+				7F8E281A9A7B4B5A86B4BDD2 /* ACPPlaces_Cordova.m in Sources */,
+				CBD8AD5EAA2041BCA75A3A53 /* ACPPlacesMonitor_Cordova.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

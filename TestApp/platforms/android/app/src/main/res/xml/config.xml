@@ -23,8 +23,8 @@
         <param name="android-package" value="com.adobe.marketing.mobile.cordova.ACPAnalytics_Cordova" />
         <param name="onload" value="true" />
     </feature>
-    <feature name="ACPGriffon_Cordova">
-        <param name="android-package" value="com.adobe.marketing.mobile.cordova.ACPGriffon_Cordova" />
+    <feature name="AEPAssurance_Cordova">
+        <param name="android-package" value="com.adobe.marketing.mobile.cordova.AEPAssurance_Cordova" />
         <param name="onload" value="true" />
     </feature>
     <feature name="ACPUserProfile_Cordova">

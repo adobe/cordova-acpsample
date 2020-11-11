@@ -7,7 +7,7 @@ import android.util.Log;
 
 import com.adobe.marketing.mobile.AdobeCallback;
 import com.adobe.marketing.mobile.Analytics;
-import com.adobe.marketing.mobile.Griffon;
+import com.adobe.marketing.mobile.Assurance;
 import com.adobe.marketing.mobile.Identity;
 import com.adobe.marketing.mobile.InvalidInitException;
 import com.adobe.marketing.mobile.Lifecycle;
@@ -33,7 +33,7 @@ public class MyApplication extends Application {
             Lifecycle.registerExtension();
             Signal.registerExtension();
             Analytics.registerExtension();
-            Griffon.registerExtension();
+            Assurance.registerExtension();
             Places.registerExtension();
             UserProfile.registerExtension();
             PlacesMonitor.registerExtension();

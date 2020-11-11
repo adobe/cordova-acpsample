@@ -49,11 +49,11 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
       ]
     },
     {
-      "id": "cordova-acpgriffon.cordova-acpgriffon",
-      "file": "plugins/cordova-acpgriffon/www/ACPGriffon.js",
-      "pluginId": "cordova-acpgriffon",
+      "id": "cordova-aepassurance.cordova-aepassurance",
+      "file": "plugins/cordova-aepassurance/www/AEPAssurance.js",
+      "pluginId": "cordova-aepassurance",
       "clobbers": [
-        "ACPGriffon"
+        "AEPAssurance"
       ]
     },
     {
@@ -85,7 +85,7 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
     "cordova-plugin-device": "2.0.3",
     "cordova-acpcore": "0.0.1",
     "cordova-acpanalytics": "0.0.1",
-    "cordova-acpgriffon": "0.0.1",
+    "cordova-aepassurance": "0.0.1",
     "cordova-acpuserprofile": "0.0.1",
     "cordova-acpplaces": "0.0.1",
     "cordova-acpplacesmonitor": "0.0.1"

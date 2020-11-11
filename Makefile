@@ -10,7 +10,7 @@ init:
 
 uninstall-plugins:
 	cd TestApp && cordova plugin remove cordova-acpanalytics
-	cd TestApp && cordova plugin remove cordova-acpgriffon
+	cd TestApp && cordova plugin remove cordova-aepassurance
 	cd TestApp && cordova plugin remove cordova-acpuserprofile
 	cd TestApp && cordova plugin remove cordova-acpplacesmonitor
 	cd TestApp && cordova plugin remove cordova-acpplaces
@@ -19,7 +19,7 @@ uninstall-plugins:
 install-plugins:
 	cd TestApp && cordova plugin add https://github.com/adobe/cordova-acpcore.git
 	cd TestApp && cordova plugin add https://github.com/adobe/cordova-acpanalytics.git
-	cd TestApp && cordova plugin add https://github.com/adobe/cordova-acpgriffon.git
+	cd TestApp && cordova plugin add https://github.com/adobe/cordova-aepassurance.git
 	cd TestApp && cordova plugin add https://github.com/adobe/cordova-acpuserprofile.git
 	cd TestApp && cordova plugin add https://github.com/adobe/cordova-acpplaces.git
 	cd TestApp && cordova plugin add https://github.com/adobe/cordova-acpplaces-monitor.git

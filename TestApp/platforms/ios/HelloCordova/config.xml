@@ -19,10 +19,6 @@
         <param name="ios-package" value="CDVGestureHandler" />
         <param name="onload" value="true" />
     </feature>
-    <feature name="ACPUserProfile_Cordova">
-        <param name="ios-package" value="ACPUserProfile_Cordova" />
-        <param name="onload" value="true" />
-    </feature>
     <feature name="Device">
         <param name="ios-package" value="CDVDevice" />
     </feature>
@@ -46,8 +42,12 @@
         <param name="ios-package" value="ACPAnalytics_Cordova" />
         <param name="onload" value="true" />
     </feature>
-    <feature name="ACPGriffon_Cordova">
-        <param name="ios-package" value="ACPGriffon_Cordova" />
+    <feature name="AEPAssurance_Cordova">
+        <param name="ios-package" value="AEPAssurance_Cordova" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="ACPUserProfile_Cordova">
+        <param name="ios-package" value="ACPUserProfile_Cordova" />
         <param name="onload" value="true" />
     </feature>
     <feature name="ACPPlaces_Cordova">

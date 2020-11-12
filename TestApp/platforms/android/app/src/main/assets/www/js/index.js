@@ -87,8 +87,8 @@ function registerControls() {
     // acpsignal
     document.getElementById("btn_extensionVersionSignal").addEventListener("click", extensionVersionSignal);
 
-    //acpgriffon
-    document.getElementById("btn_extensionVersionGriffon").addEventListener("click", extensionVersionGriffon);
+    //aepassurance
+    document.getElementById("btn_extensionVersionAssurance").addEventListener("click", extensionVersionAssurance);
     document.getElementById("btn_startSession").addEventListener("click", startSession);
 
     // acpplaces
@@ -246,14 +246,14 @@ function extensionVersionSignal() {
     ACPSignal.extensionVersion(handleCallback, handleError);
 }
 
-//acpgriffon methods
-function extensionVersionGriffon() {
-    ACPGriffon.extensionVersion(handleCallback, handleError);
+//aepassurance methods
+function extensionVersionAssurance() {
+    AEPAssurance.extensionVersion(handleCallback, handleError);
 }
 
 function startSession() {
     var sessionUrl = document.getElementById("input_startSessionUrl").value;
-    ACPGriffon.startSession(sessionUrl, handleCallback, handleError);
+    AEPAssurance.startSession(sessionUrl, handleCallback, handleError);
 }
 
 // acpplaces methods
@@ -411,6 +411,3 @@ document.addEventListener("deviceready", function () {
 }, function (error) {
         console.log(error);
 });
-
-
-    

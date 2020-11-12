@@ -32,7 +32,7 @@
 #import <ACPCore/ACPLifecycle.h>
 #import <ACPCore/ACPSignal.h>
 #import <ACPAnalytics/ACPAnalytics.h>
-#import <ACPGriffon/ACPGriffon.h>
+#import <AEPAssurance/AEPAssurance.h>
 #import <ACPPlaces/ACPPlaces.h>
 #import <ACPUserProfile/ACPUserProfile.h>
 #import <ACPPlacesMonitor/ACPPlacesMonitor.h>
@@ -53,7 +53,7 @@
     [ACPLifecycle registerExtension];
     [ACPSignal registerExtension];
     [ACPAnalytics registerExtension];
-    [ACPGriffon registerExtension];
+    [AEPAssurance registerExtension];
     [ACPPlaces registerExtension];
     [ACPPlacesMonitor registerExtension];
     [ACPUserProfile registerExtension];

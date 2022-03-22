@@ -17,12 +17,12 @@ uninstall-plugins:
 	cd TestApp && cordova plugin remove cordova-acpcore
 
 install-plugins:
-	cd TestApp && cordova plugin add https://github.com/adobe/cordova-acpcore.git
-	cd TestApp && cordova plugin add https://github.com/adobe/cordova-acpanalytics.git
-	cd TestApp && cordova plugin add https://github.com/adobe/cordova-aepassurance.git
-	cd TestApp && cordova plugin add https://github.com/adobe/cordova-acpuserprofile.git
-	cd TestApp && cordova plugin add https://github.com/adobe/cordova-acpplaces.git
-	cd TestApp && cordova plugin add https://github.com/adobe/cordova-acpplaces-monitor.git
+	cd TestApp && cordova plugin add @adobe/cordova-acpcore@1.0.0
+	cd TestApp && cordova plugin add @adobe/cordova-acpanalytics@0.0.1
+	cd TestApp && cordova plugin add @adobe/cordova-aepassurance@1.0.0
+	cd TestApp && cordova plugin add @adobe/cordova-acpuserprofile@0.0.1
+	cd TestApp && cordova plugin add @adobe/cordova-acpplaces@0.0.1
+	cd TestApp && cordova plugin add @adobe/cordova-acpplacesmonitor@0.0.1
 
 update-cordova-app:
 	cd TestApp && cordova build

@@ -1,14 +1,6 @@
 cordova.define('cordova/plugin_list', function(require, exports, module) {
   module.exports = [
     {
-      "id": "cordova-plugin-device.device",
-      "file": "plugins/cordova-plugin-device/www/device.js",
-      "pluginId": "cordova-plugin-device",
-      "clobbers": [
-        "device"
-      ]
-    },
-    {
       "id": "cordova-acpcore.cordova-acpcore",
       "file": "plugins/cordova-acpcore/www/ACPCore.js",
       "pluginId": "cordova-acpcore",
@@ -49,22 +41,6 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
       ]
     },
     {
-      "id": "cordova-aepassurance.cordova-aepassurance",
-      "file": "plugins/cordova-aepassurance/www/AEPAssurance.js",
-      "pluginId": "cordova-aepassurance",
-      "clobbers": [
-        "AEPAssurance"
-      ]
-    },
-    {
-      "id": "cordova-acpuserprofile.cordova-acpuserprofile",
-      "file": "plugins/cordova-acpuserprofile/www/ACPUserProfile.js",
-      "pluginId": "cordova-acpuserprofile",
-      "clobbers": [
-        "ACPUserProfile"
-      ]
-    },
-    {
       "id": "cordova-acpplaces.cordova-acpplaces",
       "file": "plugins/cordova-acpplaces/www/ACPPlaces.js",
       "pluginId": "cordova-acpplaces",
@@ -79,15 +55,40 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
       "clobbers": [
         "ACPPlacesMonitor"
       ]
+    },
+    {
+      "id": "cordova-acpuserprofile.cordova-acpuserprofile",
+      "file": "plugins/cordova-acpuserprofile/www/ACPUserProfile.js",
+      "pluginId": "cordova-acpuserprofile",
+      "clobbers": [
+        "ACPUserProfile"
+      ]
+    },
+    {
+      "id": "cordova-aepassurance.cordova-aepassurance",
+      "file": "plugins/cordova-aepassurance/www/AEPAssurance.js",
+      "pluginId": "cordova-aepassurance",
+      "clobbers": [
+        "AEPAssurance"
+      ]
+    },
+    {
+      "id": "cordova-plugin-device.device",
+      "file": "plugins/cordova-plugin-device/www/device.js",
+      "pluginId": "cordova-plugin-device",
+      "clobbers": [
+        "device"
+      ]
     }
   ];
   module.exports.metadata = {
-    "cordova-plugin-device": "2.0.3",
     "cordova-acpcore": "0.0.1",
     "cordova-acpanalytics": "0.0.1",
-    "cordova-aepassurance": "0.0.1",
-    "cordova-acpuserprofile": "0.0.1",
     "cordova-acpplaces": "0.0.1",
-    "cordova-acpplacesmonitor": "0.0.1"
+    "cordova-acpplacesmonitor": "0.0.1",
+    "cordova-acpuserprofile": "0.0.1",
+    "cordova-aepassurance": "1.0.0",
+    "cordova-plugin-device": "2.0.3",
+    "cordova-plugin-whitelist": "1.3.4"
   };
 });

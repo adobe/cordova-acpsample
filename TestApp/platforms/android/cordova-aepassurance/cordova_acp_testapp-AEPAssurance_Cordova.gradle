@@ -1,4 +1,0 @@
-dependencies {
-    api 'com.adobe.marketing.mobile:assurance:[1.0.0,)'
-    api 'com.android.support:appcompat-v7:+'
-}

@@ -83,9 +83,10 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
   ];
   module.exports.metadata = {
     "cordova-plugin-device": "2.0.3",
+    "cordova-plugin-whitelist": "1.3.4",
     "cordova-acpcore": "0.0.1",
     "cordova-acpanalytics": "0.0.1",
-    "cordova-aepassurance": "0.0.1",
+    "cordova-aepassurance": "1.0.0",
     "cordova-acpuserprofile": "0.0.1",
     "cordova-acpplaces": "0.0.1",
     "cordova-acpplacesmonitor": "0.0.1"

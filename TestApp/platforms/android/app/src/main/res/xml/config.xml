@@ -3,6 +3,10 @@
     <feature name="Device">
         <param name="android-package" value="org.apache.cordova.device.Device" />
     </feature>
+    <feature name="Whitelist">
+        <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
+        <param name="onload" value="true" />
+    </feature>
     <feature name="ACPCore_Cordova">
         <param name="android-package" value="com.adobe.marketing.mobile.cordova.ACPCore_Cordova" />
         <param name="onload" value="true" />

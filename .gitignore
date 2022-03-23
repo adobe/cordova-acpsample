@@ -20,10 +20,10 @@ TestApp/platforms/**/plugins
 !TestApp/platforms/android/project.properties
 TestApp/platforms/android/cordova-acpanalytics/
 TestApp/platforms/android/cordova-acpcore/
-TestApp/platforms/android/cordova-acpgriffon/
 TestApp/platforms/android/cordova-acpplaces/
 TestApp/platforms/android/cordova-acpuserprofile/
 TestApp/platforms/android/cordova-acpplacesmonitor/
+TestApp/platforms/android/cordova-aepassurance/
 TestApp/platforms/android/app/src/main/java/org/apache/cordova/device/
 TestApp/platforms/android/app/libs/gson-2.3.jar
 

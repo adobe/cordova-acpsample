@@ -100,10 +100,10 @@ ext {
 // PLUGIN GRADLE EXTENSIONS START
 apply from: "../cordova-acpcore/cordova_acp_testapp-ACPCore_Cordova.gradle"
 apply from: "../cordova-acpanalytics/cordova_acp_testapp-ACPAnalytics_Cordova.gradle"
+apply from: "../cordova-aepassurance/cordova_acp_testapp-AEPAssurance_Cordova.gradle"
 apply from: "../cordova-acpuserprofile/cordova_acp_testapp-ACPUserProfile_Cordova.gradle"
 apply from: "../cordova-acpplaces/cordova_acp_testapp-ACPPlaces_Cordova.gradle"
 apply from: "../cordova-acpplacesmonitor/cordova_acp_testapp-ACPPlacesMonitor_Cordova.gradle"
-apply from: "../cordova-aepassurance/cordova_acp_testapp-AEPAssurance_Cordova.gradle"
 // PLUGIN GRADLE EXTENSIONS END
 
 def hasBuildExtras1 = file('build-extras.gradle').exists()
